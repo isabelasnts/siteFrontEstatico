@@ -1,0 +1,218 @@
+header{
+    background-color: #1a1d24;
+}
+.container{
+    max-width: 98rem;
+    margin-inline:auto;
+    padding-inline: 1.5rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+}
+.nav-lista {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    min-width: 10rem;
+    text-align: center;
+    padding-block: none;
+}
+
+
+.botao-form{
+    display: inline-block;
+    border-radius: 8px;
+    margin-left: 350px ;
+    margin-top: 10px;
+    border-radius: 7px;
+    border-width: 1px;
+    background-image: linear-gradient(90deg, #5e8fd8,#3bb68d);
+    color:rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-property: width, border-radius; 
+    transition-duration: 0.25s;
+    transition-delay:0.5s ;
+}
+
+
+.container-prod{
+    max-width: 1000rem;
+    padding: 1.5rem; 
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 2fr));
+    grid-gap: 1.5rem;
+}
+.card{
+    background: #262525;
+    color: fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+.titulo-produto-gde{
+    font-family: fantasy, sans-serif;
+    font-size:  10rem;
+    letter-spacing: 0.5rem;
+    color: #1d1d1d;
+    transform: translatex(7rem);
+    transition: transform 2.5s;
+}
+.titulo-produto-peq{
+    margin-bottom: 1rem;
+}
+.descricao{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+}
+
+.card:hover .card1{
+    background-color: #262525;
+}
+.card:hover .titulo-produto-gde{
+    transform: translateX(-115%);
+    color: fff;
+}
+.card.produto1:hover{
+    background-color: #003087;
+    background-image: url("./imagens/ps.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card.produto2:hover{
+    background-color: #7CB342 ;
+    background-image: url("./imagens/xboxlogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card.produto3:hover{
+    background-color: #FF3D00;
+    background-image: url("./imagens/Nintendo-Switch-Logo.png");
+    background-size:47rem ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.corpo{
+    background-color: rgb(96, 105, 105);
+}
+
+.navigation {
+    position: static;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3b3b3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tabela{
+width: calc(100% - 60px);
+border-collapse: collapse;
+border-radius: 5px;
+border-collapse: separate;
+text-indent: initial;
+border-spacing: 2px;
+}
+.container-planos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+
+}
+.sobre{
+    display: flex;
+    padding: 30px 30px 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto{
+    display: flex;
+    padding: 120px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-contato{
+    margin-left: 35rem;
+    margin-bottom: 40px;
+}
+
+.formulario-contato .bloco-form{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width:50rem;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.formulario-contato .nome-form{
+    align-items: center;
+    justify-self: center;
+}
+.formulario-contato input.nome{
+    border: #0a0a0a;
+    border-radius: 7px;
+    margin-left:1rem;
+    top:23px;
+    width:340px;
+    margin-top: 10px;
+}
+.formulario-contato input.email{
+    border: #0a0a0a;
+    border-radius: 7px;
+    margin-left:1rem;
+    top:23px;
+    width:340px;
+    margin-top: 10px;
+}
+.formulario-contato input.telefone{
+    border: #0a0a0a;
+    border-radius: 7px;
+    margin-left:0.5rem;
+    top:23px;
+    width:340px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulario-contato textarea.campo-texto{
+    border: #0a0a0a;
+    border-radius: 7px;
+    left:95px;
+    top:23px;
+    width:410px;
+    margin-top: 10px;
+    resize: none;
+}
+
+table, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 1000px;
+    align-content: center;
+}
