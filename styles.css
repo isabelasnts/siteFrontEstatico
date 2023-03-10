@@ -1,111 +1,120 @@
-header{
-    background-color: #1a1d24;
+* {
+    margin: 0;
 }
-.container{
-    max-width: 98rem;
-    margin-inline:auto;
-    padding-inline: 1.5rem;
+
+header {
+    padding: 20px;
+    display: block;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
 }
-.navbar{
+
+body {
+    margin: 0px;
+    background-color: #a0a0a0;
+    color: #242424;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./imagens/1231556.png);
+    backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:-9px ;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-block: 1.5rem;
 }
+
 .nav-lista {
     position: relative;
     display: flex;
     list-style: none;
 }
-.nav-item{
+
+.nav-item {
     min-width: 10rem;
     text-align: center;
     padding-block: none;
 }
 
-
-.botao-form{
-    display: inline-block;
-    border-radius: 8px;
-    margin-left: 350px ;
-    margin-top: 10px;
-    border-radius: 7px;
-    border-width: 1px;
-    background-image: linear-gradient(90deg, #5e8fd8,#3bb68d);
-    color:rgb(0, 0, 0);
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition-property: width, border-radius; 
-    transition-duration: 0.25s;
-    transition-delay:0.5s ;
+.container-prod {
+    padding: 1rem;
 }
 
-
-.container-prod{
-    max-width: 1000rem;
-    padding: 1.5rem; 
-}
-.cards{
+.cards {
     display: grid;
-    grid-template-columns: repeat(3, minmax(20rem, 2fr));
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(25rem, 2fr));
+    grid-gap: 1rem;
 }
-.card{
+
+.card {
     background: #262525;
-    color: fff;
     padding: 1.5rem;
     overflow: hidden;
     border-radius: 0.8rem;
 }
-.titulo-produto-gde{
+
+.titulo-produto-gde {
     font-family: fantasy, sans-serif;
-    font-size:  10rem;
+    font-size: 10rem;
     letter-spacing: 0.5rem;
     color: #1d1d1d;
-    transform: translatex(7rem);
+    transform: translatex(10rem);
     transition: transform 2.5s;
 }
-.titulo-produto-peq{
+
+.titulo-produto-peq {
     margin-bottom: 1rem;
 }
-.descricao{
+
+.descricao {
     font-size: 1.4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
 }
 
-.card:hover .card1{
+.card:hover .card1 {
     background-color: #262525;
 }
-.card:hover .titulo-produto-gde{
+
+.card:hover .titulo-produto-gde {
     transform: translateX(-115%);
     color: fff;
 }
-.card.produto1:hover{
+
+.card.produto1:hover {
     background-color: #003087;
     background-image: url("./imagens/ps.png");
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
-.card.produto2:hover{
-    background-color: #7CB342 ;
+.card.produto2:hover {
+    background-color: #7CB342;
     background-image: url("./imagens/xboxlogo.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-.card.produto3:hover{
+
+.card.produto3:hover {
     background-color: #FF3D00;
     background-image: url("./imagens/Nintendo-Switch-Logo.png");
-    background-size:47rem ;
+    background-size: 47rem;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
-.corpo{
-    background-color: rgb(96, 105, 105);
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .navigation {
     position: static;
@@ -124,95 +133,159 @@ header{
     padding-bottom: 15px;
 }
 
-.tabela{
-width: calc(100% - 60px);
-border-collapse: collapse;
-border-radius: 5px;
-border-collapse: separate;
-text-indent: initial;
-border-spacing: 2px;
-}
-.container-planos{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 30px;
-
-}
-.sobre{
+.sobre {
     display: flex;
     padding: 30px 30px 120px;
     justify-content: center;
     align-items: center;
 }
 
-.produto{
-    display: flex;
-    padding: 120px 30px;
-    justify-content: center;
+.tabela .titulo {
+    font-size: 20px;
+
+}
+
+th {
+    display: table-cell;
+    font-weight: bold;
+    border-collapse: separate;
+}
+td{
+    border-collapse: separate;
+}
+.tabela {
+    width: calc(100%);
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    text-indent: initial;
+    font-size: 17px;
+    padding: .1px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 100rem;
+    align-content: center;
     align-items: center;
+    text-align: center;
+    border-collapse: separate;
+
 }
 
-.formulario-contato{
-    margin-left: 35rem;
-    margin-bottom: 40px;
+tfoot{
+    border-spacing: .1rem;
+    border-radius: 5px;
 }
 
-.formulario-contato .bloco-form{
-    background-color: rgba(255, 255, 255, 0.5);
+
+.container-planos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.contato {
+    margin: 0;
+}
+
+.contato .bloco-form {
+    background-color: rgba(121, 121, 121, 0.7);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-    width:50rem;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
 }
 
-.formulario-contato .nome-form{
-    align-items: center;
-    justify-self: center;
-}
-.formulario-contato input.nome{
+.formulario-contato input.nome {
     border: #0a0a0a;
     border-radius: 7px;
-    margin-left:1rem;
-    top:23px;
-    width:340px;
+    top: 23px;
+    width: 30rem;
     margin-top: 10px;
+    opacity: 0.6;
 }
-.formulario-contato input.email{
+
+.formulario-contato input.email {
     border: #0a0a0a;
     border-radius: 7px;
-    margin-left:1rem;
-    top:23px;
-    width:340px;
+    top: 23px;
+    width: 30rem;
     margin-top: 10px;
+    opacity: 0.6;
 }
-.formulario-contato input.telefone{
+
+.formulario-contato input.telefone {
     border: #0a0a0a;
     border-radius: 7px;
-    margin-left:0.5rem;
-    top:23px;
-    width:340px;
+    top: 23px;
+    width: 30rem;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.formulario-contato textarea.campo-texto{
-    border: #0a0a0a;
-    border-radius: 7px;
-    left:95px;
-    top:23px;
-    width:410px;
-    margin-top: 10px;
-    resize: none;
+    opacity: 0.6;
 }
 
-table, td {
-    border: 1px solid;
-    border-collapse: collapse;
-    width: 1000px;
-    align-content: center;
+.formulario-contato textarea {
+    border: #0a0a0a;
+    border-radius: 7px;
+    top: 23px;
+    width: 30rem;
+    margin-top: 10px;
+    resize: none;
+    opacity: 0.6;
+}
+
+.botao-form {
+    display: inline-block;
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 8px;
+    margin-left: 27rem;
+    margin-top: 1rem;
+    border-radius: 7px;
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-property: width, border-radius;
+    transition-duration: 0.25s;
+    transition-delay: 0.5s;
+}
+
+.botao-form:hover {
+    background-image: linear-gradient(90deg, #5e8fd8, #3bb68d);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #1b1b1b;
+    font-size: 14px;
+    font-weight: bold;
 }
