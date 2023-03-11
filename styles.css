@@ -11,24 +11,22 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: -9px;
-    scroll-behavior: smooth;
 }
 
 header {
     position: fixed;
     padding: 20px;
     display: block;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(24, 24, 24, 0.9);
     font-family: 'Roboto', sans-serif;
 }
 
 .navigation {
     position: sticky;
-    width: 100%;
+    width: 96.7%;
     right: 0;
     top: 0;
     bottom: auto;
-    /* z-index: 1; */
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
@@ -36,6 +34,7 @@ header {
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    z-index: 1;
 }
 
 .nav-bar {
@@ -61,13 +60,52 @@ header {
     text-decoration: none;
     text-align: center;
     justify-content: space-evenly;
+    color: #00afef;
+    font-weight:1000;
+}
+
+.botao:hover {
+    color:aliceblue
+}
+
+.content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .sobre {
-    display: flex;
-    padding: 30px 30px 120px;
+    background-color: rgba(121, 121, 121, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    width: 92%;
+    margin-left: 1%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    /* display: ; */
+    padding-top: 15px;
+    padding:50px;
     justify-content: center;
     align-items: center;
+    position:relative ;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 2fr));
+}
+.sobre:hover{
+    background-color: rgb(240, 248, 255, 0.9);
+}
+.sobre h2{
+    font-size: 3.7rem;
+}
+.sobre p{
+    font-size: 1.4rem;
+    text-align: justify;
 }
 
 .container-prod {
@@ -81,7 +119,8 @@ header {
 }
 
 .card {
-    background: #303030;
+    background-color: rgba(121, 121, 121, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     padding: 1.5rem;
     overflow: hidden;
     border-radius: 0.8rem;
@@ -109,8 +148,18 @@ header {
     line-height: 1.5;
 }
 
-.card:hover .titulo-produto-gde {
-    transform: translateX(-170%);
+.card.produto1:hover .titulo-produto-gde{
+    transform: translateX(-27%);
+    color: #000000;
+}
+
+.card.produto3:hover .titulo-produto-gde{
+    transform: translateX(-45%);
+    color: #000000;
+}
+
+.card.produto2:hover .titulo-produto-gde {
+    transform: translateX(-70%);
     color: #000000;
 }
 
@@ -119,7 +168,6 @@ header {
     background-image: url("./imagens/ps.png");
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .card.produto2:hover {
@@ -133,99 +181,90 @@ header {
 .card.produto3:hover {
     background-color: #FF3D00;
     /* background: linear-gradient(to left, #5c90f1 , #ff3d00 ); */
-    background-image: url("./imagens/nitendo.png");
+    background-image: url("./imagens/nintendo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 65%;
-
 }
 
 .produto {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-planos {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 30px;
+    background-color: #ffffff, 0.1;
+    justify-content: center;
 }
-
 table {
+    position: relative;
+    table-layout: fixed;
     justify-content: center;
     align-items: center;
-}
-
-.tabela {
-    width: calc(100%);
+    margin-left: 5%;
     border-radius: 5px;
     border-collapse: collapse;
     text-transform: uppercase;
     text-indent: initial;
     font-size: 17px;
     padding: .1px;
-    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
 }
 
 .tabela .titulo {
-
     border-radius: 5px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 1000;
+    padding: 10px;
 }
 
 th {
-    display: table-cell;
-    font-weight: bold;
+    padding: 15px;
+    font-weight: 800;
     border-radius: 5px;
-    border-collapse: separate;
-    background-color: #7CB342;
-    color: #003087;
+    border-collapse:separate ;
+    border-spacing: 50px;
+    background-image: linear-gradient(45deg, #5e8fd8, #eb7a7a, #3bb68d);
+    color: #000000;
 }
 
-tbody {
+tbody td{
     border-collapse: separate;
-    border: 1px solid;
+    border: 3px solid white;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border-collapse: collapse;
 }
 
 table,
 td {
-    border: 1px solid;
+    
+    /* border: 1px solid; */
     border-collapse: collapse;
-    width: 10rem;
+    width: 50rem;
     align-content: center;
     align-items: center;
     text-align: center;
     border-collapse: separate;
     border-radius: 5px;
-
+    background-color: #ffffff, 0.8;
 }
 
-tfoot {
+tfoot td{
+    
+    padding: 12px;
     border-spacing: .1rem;
     border-radius: 5px;
-    background-color: #7CB342;
-    color: #003087;
-}
-
-
-.container-planos {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 30px;
-
-}
-
-.content h2 {
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 45px;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    background-image: linear-gradient(90deg, #5e8fd8, #eb7a7a, #3bb68d);
+    color: #000000;
+    font-weight: 1000;
 }
 
 .contato {
@@ -237,9 +276,12 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    width: 100%;
+    margin-left: .7%;
+    width: 93.5%;
     padding: 3rem;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario-contato input.nome {
@@ -287,13 +329,12 @@ h2 {
     border-radius: 8px;
     margin-left: 27rem;
     margin-top: 1rem;
-    border-radius: 7px;
     border-width: 1px;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
-    transition-property: width, border-radius;
+    transition-property: border-radius;
     transition-duration: 0.25s;
     transition-delay: 0.5s;
 }
@@ -306,7 +347,9 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: #1b1b1b;
+    background-color: rgba(3, 3, 3, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color:dimgray;
     font-size: 14px;
     font-weight: bold;
 }
